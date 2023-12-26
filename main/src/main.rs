@@ -1,6 +1,6 @@
 use anyhow::{bail, Result};
 use clap::Parser;
-use encryptor::password::gererate_password;
+use encryptor::password::generate_password;
 #[derive(Parser, Debug)]
 #[clap(version,author,about,long_about=None)]
 struct Args {
@@ -17,7 +17,7 @@ fn main() -> Result<()> {
         bail!("seed {} length must >=4", &args.seed);
     }
     let (seed, length) = (args.seed, args.length);
-    let passwd = gererate_password(&seed[..], length);
+    let passwd = generate_password(&seed[..], length);
     match passwd {
         Ok(val) => println!("{}", val),
         Err(e) => println!("Error: {}", e),

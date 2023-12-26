@@ -1,5 +1,7 @@
 {
     "rust-analyzer.linkedProjects": [
-        "./hash/Cargo.toml"
+        "./hash/Cargo.toml",
+        "./PM-gen/Cargo.toml",
+        "./PM-gen/Cargo.toml"
     ]
 }
