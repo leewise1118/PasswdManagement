@@ -10,3 +10,4 @@ clap = { version = "4.4.11", features = ["derive"] }
 prettytable-rs = "0.10.0"
 encryptor = { path = "../encryptor" }
 url = "2.5.0"
+PM-list = {path = "../PM-list"}

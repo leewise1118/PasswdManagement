@@ -1,2 +1,11 @@
 [workspace]
-members = ["hash", "encryptor", "main", "PM", "PM-gen", "PM-list"]
+members = [
+    "hash",
+    "encryptor",
+    "main",
+    "PM",
+    "PM-gen",
+    "PM-list",
+    "PM-add",
+    "PM-remove",
+]
